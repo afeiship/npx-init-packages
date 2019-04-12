@@ -1,18 +1,20 @@
 # next-nice-comments
 > Build nice comments.
 
-## install:
+## install
 ```bash
 npm install -S afeiship/next-nice-comments --registry=https://registry.npm.taobao.org
 ```
 
-## usage:
+## usage
 ```js
 var comments = [
   'name: next-nice-comments',
   'description: Just a lite',
   'licence: MIT'
 ];
+
+// list, type:
 nx.niceComments(comments,'js');
 nx.niceComments(comments,'html');
 
