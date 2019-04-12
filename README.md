@@ -1,5 +1,5 @@
 # next-nice-comments
-> Build nice comments
+> Build nice comments.
 
 ## install:
 ```bash
