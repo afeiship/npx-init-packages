@@ -7,7 +7,7 @@
       end: '\n */\n'
     },
     html: {
-      start: '<!--!\n',
+      start: '<!--\n',
       end: '\n-->\n'
     }
   };
