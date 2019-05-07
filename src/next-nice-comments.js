@@ -4,11 +4,11 @@
   var DEFAULT_TYPES = {
     js: {
       start: '/*!\n',
-      end: '\n */\n'
+      end: '\n */\n\n'
     },
     html: {
       start: '<!--\n',
-      end: '\n-->\n'
+      end: '\n-->\n\n'
     }
   };
 
