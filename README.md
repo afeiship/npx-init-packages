@@ -1,7 +1,7 @@
 # next-nice-comments
 > Build nice comments.
 
-## install
+## installation
 ```bash
 npm install -S @feizheng/next-nice-comments
 ```
