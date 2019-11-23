@@ -1,4 +1,4 @@
-var nx = require('next-js-core2');
+var nx = require('@feizheng/next-js-core2');
 require('../src/next-nice-comments');
 
 test('nx.niceComments', function() {
@@ -8,8 +8,8 @@ test('nx.niceComments', function() {
     'licence: MIT'
   ];
 
-  console.log(nx.niceComments(comments,'js'));
-  console.log(nx.niceComments(comments,'html'));
+  console.log(nx.niceComments(comments, 'js'));
+  console.log(nx.niceComments(comments, 'html'));
   // var obj1 = {name: 'fei'};
   // var obj2 = {email: '1290657123@qq.com'};
 
