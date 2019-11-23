@@ -3,7 +3,7 @@
 
 ## install
 ```bash
-npm install -S afeiship/next-nice-comments --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-nice-comments
 ```
 
 ## usage
