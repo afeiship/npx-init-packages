@@ -21,7 +21,9 @@ var comments = [
 
 // list, type:
 nx.niceComments(comments,'js');
+nx.niceComments(comments,'css');
 nx.niceComments(comments,'html');
+nx.niceComments(comments,'pure');
 
 /*!
  * name: next-nice-comments
