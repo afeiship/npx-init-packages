@@ -2,8 +2,8 @@
  * name: @feizheng/next-nice-comments
  * description: Build nice comments.
  * homepage: https://github.com/afeiship/next-nice-comments
- * version: 1.0.0
- * date: 2020-07-07T13:57:56.518Z
+ * version: 1.1.0
+ * date: 2020-07-07T13:58:37.855Z
  * license: MIT
  */
 
