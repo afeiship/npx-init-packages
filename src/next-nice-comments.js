@@ -17,7 +17,7 @@
       lineWith: ' * ',
       end: '\n-->\n\n'
     },
-    pure: {
+    raw: {
       start: '',
       lineWith: ' ',
       end: ''

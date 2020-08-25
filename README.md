@@ -23,7 +23,7 @@ var comments = [
 nx.niceComments(comments,'js');
 nx.niceComments(comments,'css');
 nx.niceComments(comments,'html');
-nx.niceComments(comments,'pure');
+nx.niceComments(comments,'raw');
 
 /*!
  * name: next-nice-comments
