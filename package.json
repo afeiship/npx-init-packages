@@ -12,7 +12,7 @@
     "test": "jest",
     "release": "release-it"
   },
-  "main": "dist/next-nice-comments.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
     "@feizheng/gulp-pkg-header": "^1.0.4",
@@ -36,6 +36,7 @@
     "yargs": "^16.1.0"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "keywords": [
