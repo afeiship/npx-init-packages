@@ -3,7 +3,7 @@
  * description: Build nice comments.
  * homepage: https://github.com/afeiship/next-nice-comments
  * version: 1.0.0
- * date: 2020-11-14T04:35:47.107Z
+ * date: 2020-11-14T04:49:52.140Z
  * license: MIT
  */
 
