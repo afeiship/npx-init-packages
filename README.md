@@ -8,7 +8,7 @@
 
 ## installation
 ```bash
-npm install -S @feizheng/next-nice-comments
+npm install -S @jswork/next-nice-comments
 ```
 
 ## usage
@@ -41,14 +41,14 @@ nx.niceComments(comments,'raw');
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-nice-comments/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/next-nice-comments
-[version-url]: https://npmjs.org/package/@feizheng/next-nice-comments
+[version-image]: https://img.shields.io/npm/v/@jswork/next-nice-comments
+[version-url]: https://npmjs.org/package/@jswork/next-nice-comments
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/next-nice-comments
+[license-image]: https://img.shields.io/npm/l/@jswork/next-nice-comments
 [license-url]: https://github.com/afeiship/next-nice-comments/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/next-nice-comments
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-nice-comments
 [size-url]: https://github.com/afeiship/next-nice-comments/blob/master/dist/next-nice-comments.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/next-nice-comments
-[download-url]: https://www.npmjs.com/package/@feizheng/next-nice-comments
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-nice-comments
+[download-url]: https://www.npmjs.com/package/@jswork/next-nice-comments

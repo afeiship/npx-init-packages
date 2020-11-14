@@ -1,15 +1,15 @@
 /*!
- * name: @feizheng/next-nice-comments
+ * name: @jswork/next-nice-comments
  * description: Build nice comments.
  * homepage: https://github.com/afeiship/next-nice-comments
- * version: 1.1.1
- * date: 2020-08-25T03:18:06.830Z
+ * version: 1.0.0
+ * date: 2020-11-14T04:33:24.906Z
  * license: MIT
  */
 
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var DEFAULT_TYPES = {
     js: {
       start: '/*!\n',
@@ -45,5 +45,3 @@
     module.exports = nx.niceComments;
   }
 })();
-
-//# sourceMappingURL=next-nice-comments.js.map
