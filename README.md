@@ -13,7 +13,9 @@ npm install -S @jswork/next-nice-comments
 
 ## usage
 ```js
-var comments = [
+import '@jswork/next-nice-comments';
+
+const comments = [
   'name: next-nice-comments',
   'description: Just a lite',
   'licence: MIT'
