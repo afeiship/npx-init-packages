@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-nice-comments",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Build nice comments.",
   "homepage": "https://github.com/afeiship/next-nice-comments",
   "author": {
@@ -41,6 +41,12 @@
   },
   "keywords": [
     "next",
-    "comments"
+    "comments",
+    "header",
+    "banner",
+    "js",
+    "html",
+    "css",
+    "raw"
   ]
 }
