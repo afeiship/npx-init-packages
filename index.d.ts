@@ -8,4 +8,4 @@ interface NxStatic {
   niceComments: (target: string[], type: CommentType) => string;
 }
 
-export default function niceComments(target: string[], type: CommentType): string;
+// export default function niceComments(target: string[], type: CommentType): string;
