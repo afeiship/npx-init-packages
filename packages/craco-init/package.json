@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-init",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Craco init.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
