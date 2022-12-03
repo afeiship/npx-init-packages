@@ -14,12 +14,12 @@ files.forEach((file) => {
 // 更新 start/build/test 三个 scripts
 const pkgPath = path.join(process.cwd(), 'package.json');
 const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'));
+pkg.scripts = pkg.scripts || {};
+pkg.devDependencies = pkg.devDependencies || {};
 pkg.scripts.start = 'craco start';
 pkg.scripts.build = 'craco build';
 pkg.scripts.test = 'craco test';
 
-
-// 添加 @craco/craco @craco/types 到 npm 中
 pkg.devDependencies['@craco/craco'] = "latest";
 pkg.devDependencies['@craco/types'] = "latest";
 
