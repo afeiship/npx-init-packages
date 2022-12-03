@@ -1,6 +1,5 @@
 (function () {
   'use strict';
-
   const gulp = require('gulp');
   const tsconfig = require('../tsconfig.json');
   const $ = require('gulp-load-plugins')({
@@ -18,6 +17,6 @@
   });
 
   gulp.task('scripts:tpls', function () {
-    return gulp.src('src/tpls/*').pipe(gulp.dest('dist/tpls'));
+    return gulp.src('templates/*').pipe(gulp.dest('dist/templates'));
   });
 })();
