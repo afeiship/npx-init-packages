@@ -5,6 +5,7 @@
 
 import path from "path";
 import fs from "fs";
+import { execSync } from "child_process";
 
 export default () => {
   // cp __dirname/tpls/* .
@@ -24,17 +25,12 @@ export default () => {
   pkg.scripts.test = "craco test";
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
 
+  // 添加 @craco/craco @craco/types 到 npm 中
+  execSync("npm i @craco/craco @craco/types", { stdio: "inherit" });
+
   // 添加 "extends": "./tsconfig.path.json" 到 tsconfig.json 上
   const tsconfigPath = path.join(process.cwd(), "tsconfig.json");
   const tsconfig = JSON.parse(fs.readFileSync(tsconfigPath, "utf-8"));
   tsconfig.extends = "./tsconfig.path.json";
   fs.writeFileSync(tsconfigPath, JSON.stringify(tsconfig, null, 2));
-
-  // 添加 @craco/craco @craco/types 到 npm 中
-  const npm = require("npm");
-  npm.load(() => {
-    npm.commands.install(["@craco/craco", "@craco/types"], () => {
-      console.log("craco 初始化完成");
-    });
-  });
 }
