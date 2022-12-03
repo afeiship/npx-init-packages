@@ -2,21 +2,16 @@
   'use strict';
   const gulp = require('gulp');
   const tsconfig = require('../tsconfig.json');
+  const { execSync, exec } = require('child_process');
   const $ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'gulp.*', 'del', '@jswork/gulp-*'],
   });
 
-  gulp.task('scripts:cjs', function () {
-    return gulp
-      .src('src/index.ts')
-      .pipe($.replace('export default ', 'export = '))
-      .pipe($.jswork.pkgHeader())
-      .pipe($.typescript({ ...tsconfig.compilerOptions, module: 'commonjs' }))
-      .pipe(gulp.dest('dist'))
-      .pipe($.size({ title: '[ minimize size ]:' }));
+  gulp.task('scripts:cjs', async function () {
+    execSync('tsc', { stdio: 'inherit' });
   });
 
   gulp.task('scripts:tpls', function () {
-    return gulp.src('templates/*').pipe(gulp.dest('dist/templates'));
+    return gulp.src('src/tpls/*').pipe(gulp.dest('dist/tpls'));
   });
 })();

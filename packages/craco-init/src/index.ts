@@ -4,7 +4,7 @@ import fs from "fs";
 import { execSync } from "child_process";
 
 // cp __dirname/tpls/* .
-const tpls = path.join(__dirname, "templates");
+const tpls = path.join(__dirname, "tpls");
 const files = ["craco.config.ts", "tsconfig.path.json"];
 files.forEach((file) => {
   const from = path.join(tpls, file);

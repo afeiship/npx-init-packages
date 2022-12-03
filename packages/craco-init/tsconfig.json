@@ -1,7 +1,6 @@
 {
   "extends": "@tsconfig/node12/tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src",
     "outDir": "dist",
     "declaration": true,
     "noUnusedLocals": true,
@@ -9,5 +8,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "removeComments": true
-  }
+  },
+  "include": [
+    "src/index.ts"
+  ]
 }
