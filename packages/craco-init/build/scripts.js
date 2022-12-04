@@ -1,17 +1,12 @@
-(function () {
-  'use strict';
-  const gulp = require('gulp');
-  const tsconfig = require('../tsconfig.json');
-  const { execSync, exec } = require('child_process');
-  const $ = require('gulp-load-plugins')({
-    pattern: ['gulp-*', 'gulp.*', 'del', '@jswork/gulp-*'],
-  });
+'use strict';
 
-  gulp.task('scripts:cjs', async function () {
-    execSync('tsc', { stdio: 'inherit' });
-  });
+const gulp = require('gulp');
+const { execSync } = require('child_process');
 
-  gulp.task('scripts:tpls', function () {
-    return gulp.src('src/tpls/*').pipe(gulp.dest('dist/tpls'));
-  });
-})();
+gulp.task('scripts:cjs', async function () {
+  execSync('tsc', { stdio: 'inherit' });
+});
+
+gulp.task('scripts:tpls', function () {
+  return gulp.src('src/tpls/*').pipe(gulp.dest('dist/tpls'));
+});
