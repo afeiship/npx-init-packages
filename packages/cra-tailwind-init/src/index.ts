@@ -8,8 +8,6 @@ const tpls = path.join(__dirname, 'tpls');
 const files = fs.readdirSync(tpls);
 
 execSync('yarn add --dev tailwindcss');
-console.log('@reference: https://js.work/posts/069e79035015a');
-
 
 // copy files:
 files.forEach((file) => {
@@ -17,5 +15,7 @@ files.forEach((file) => {
   const dest = path.join(process.cwd(), file);
   fs.copyFileSync(src, dest);
 });
+
+console.log('@reference: https://js.work/posts/069e79035015a');
 
 process.exit(0);
