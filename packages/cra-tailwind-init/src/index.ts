@@ -8,7 +8,7 @@ const tpls = path.join(__dirname, 'tpls');
 const files = fs.readdirSync(tpls);
 
 execSync('yarn add --dev tailwindcss');
-execSync('npx tailwindcss init');
+// execSync('npx tailwindcss init');
 
 // copy files:
 files.forEach((file) => {
