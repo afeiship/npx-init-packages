@@ -1,14 +1,18 @@
-import fs from "fs";
-import path from "path";
+import path from 'path';
+import fs from 'fs';
+import { execSync } from 'child_process';
 
 const tpls = path.join(__dirname, 'tpls');
-const files = ['dummy.txt'];
+const files = fs.readdirSync(tpls);
 
+execSync('yarn add --dev tailwindcss');
+execSync('npx tailwindcss init');
+
+// copy files:
 files.forEach((file) => {
-  const from = path.join(tpls, file);
-  const to = path.join(process.cwd(), file);
-  fs.copyFileSync(from, to);
+  const src = path.join(tpls, file);
+  const dest = path.join(process.cwd(), file);
+  fs.copyFileSync(src, dest);
 });
 
-console.log('files copyed!');
 process.exit(0);
