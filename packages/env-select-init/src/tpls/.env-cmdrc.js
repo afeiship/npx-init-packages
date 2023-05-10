@@ -1,11 +1,10 @@
-// 1. .env-cmdrc.js
-const { CraEnvs } = require('@jswork/env-select');
+const { CraEnvs } = require("@jswork/env-select");
 
 module.exports = CraEnvs.set({
   beta: {
-    base_url: 'https://beta.dev.com',
+    base_url: "https://beta.dev.com",
   },
   production: {
-    base_url: 'https://prod.dev.com',
+    base_url: "https://prod.dev.com",
   },
 });
