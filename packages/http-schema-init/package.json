@@ -11,6 +11,9 @@
     "release": "release-it"
   },
   "license": "MIT",
+  "dependencies": {
+    "fast-glob": "^3.2.12"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
@@ -20,7 +23,6 @@
     "@types/jest": "^26.0.23",
     "babel-jest": "^27.0.1",
     "del": "^5.1.0",
-    "fast-glob": "^3.2.12",
     "gulp": "^4.0.2",
     "gulp-header": "^2.0.9",
     "gulp-ignore": "^3.0.0",
