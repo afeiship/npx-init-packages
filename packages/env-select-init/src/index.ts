@@ -3,9 +3,10 @@
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
+import fg from 'fast-glob';
 
 const tpls = path.join(__dirname, 'tpls');
-const files = fs.readdirSync(tpls);
+const files = fg.sync('**/*', { cwd: tpls, dot: true });
 
 execSync('yarn add --dev env-cmd');
 execSync('yarn add @jswork/env-select');
