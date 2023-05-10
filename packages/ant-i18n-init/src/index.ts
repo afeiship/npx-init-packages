@@ -18,6 +18,6 @@ files.forEach((file) => {
   fs.copyFileSync(src, dist);
 });
 
-console.log('@reference: https://js.work/posts/069e79035015a');
+console.log('@reference: https://js.work/works/0f2835cd867fb');
 
 process.exit(0);
