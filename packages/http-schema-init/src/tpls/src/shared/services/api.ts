@@ -4,7 +4,8 @@ import ResponseCommon from './interceptors/response/common';
 import RequestCommon from './interceptors/request/common';
 
 const options = {
-  intercepotors: [
+  slim: true,
+  interceptors: [
     { type: 'response', fn: ResponseCommon },
     { type: 'request', fn: RequestCommon },
   ],
