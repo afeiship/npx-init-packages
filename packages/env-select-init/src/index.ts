@@ -19,6 +19,6 @@ files.forEach((file) => {
   fs.copyFileSync(src, dest);
 });
 
-console.log('@reference: https://js.work/posts/61077d5843ff0');
+console.log('\n@reference: https://js.work/posts/61077d5843ff0');
 
 process.exit(0);
