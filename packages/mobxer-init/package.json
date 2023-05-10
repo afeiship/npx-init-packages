@@ -40,5 +40,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "boilerplate": "generator-typescript",
-  "homepage": "https://js.work"
+  "homepage": "https://js.work",
+  "dependencies": {
+    "fast-glob": "^3.2.12"
+  }
 }
