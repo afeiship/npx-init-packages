@@ -4,7 +4,7 @@
 **/node_modules
 test
 __tests__
-src
+/src
 build
 gulpfile.js
 
@@ -12,7 +12,6 @@ gulpfile.js
 .prettierrc
 .prettierignore
 .release-it.json
-typedoc.js
 tsconfig.json
 jest.config.js
 babel.config.js
