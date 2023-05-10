@@ -5,7 +5,7 @@ module.exports = CraEnvs.set({
   beta: {
     base_url: 'https://beta.dev.com',
   },
-  staging: {
+  production: {
     base_url: 'https://prod.dev.com',
   },
 });
