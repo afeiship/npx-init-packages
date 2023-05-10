@@ -1,6 +1,6 @@
 {
   "name": "@jswork/http-schema-init",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Init tools for http-schema.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
