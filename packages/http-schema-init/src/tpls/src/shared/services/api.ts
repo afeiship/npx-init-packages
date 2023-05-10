@@ -19,7 +19,7 @@ export default httpSchema(
     items: [
       {
         items: {
-          login: ['get', '/users/afeiship'],
+          profile: ['get', '/users/afeiship'],
         },
       },
     ],
