@@ -1,6 +1,6 @@
 {
   "name": "@jswork/ant-i18n-init",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ant i18n init tools.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
