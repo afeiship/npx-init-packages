@@ -1,6 +1,6 @@
 {
   "name": "@jswork/mobxer-init",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Init tools for mobxer.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
