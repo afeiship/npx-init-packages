@@ -1,0 +1,27 @@
+import httpSchema from '@jswork/http-schema';
+
+import ResponseCommon from './interceptors/response/common';
+import RequestCommon from './interceptors/request/common';
+
+const options = {
+  intercepotors: [
+    { type: 'response', fn: ResponseCommon },
+    { type: 'request', fn: RequestCommon },
+  ],
+};
+
+export default httpSchema(
+  {
+    baseURL: 'https://api.github.com',
+    request: ['', 'json'],
+    resources: [{ name: 'users' }],
+    items: [
+      {
+        items: {
+          login: ['get', '/users/afeiship'],
+        },
+      },
+    ],
+  },
+  options
+);
