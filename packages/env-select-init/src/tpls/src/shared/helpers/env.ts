@@ -1,6 +1,6 @@
 import { AbstractEnvSelect } from '@jswork/env-select';
 
-class Env extends AbstractEnvSelect {
+export class Env extends AbstractEnvSelect {
   /**
    * Auto select env by current url.
    * @returns {string} The target env string.
