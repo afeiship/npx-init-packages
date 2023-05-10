@@ -1,10 +1,13 @@
 # Sample
 > 基本用法。
 
-## app.tsx
+## usage
+> provider/app.tsx
+
 ```jsx
 import { LocaleProvider } from '@jswork/react-ant-i18n';
-// special for alo7
+// special for alo7(
+// yarn add @alo7/i18n-language-detect --registry=https://repos.saybot.net/repository/alo7npm/
 import LngDetect from '@alo7/i18n-language-detect';
 
 const root = ReactDOM.createRoot(
@@ -18,7 +21,8 @@ root.render(
 );
 ```
 
-## usage
+> app.tsx
+
 ```jsx
 import React from 'react';
 import { useIntl } from '@jswork/react-ant-i18n';
