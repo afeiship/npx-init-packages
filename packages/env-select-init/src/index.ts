@@ -15,11 +15,12 @@ execSync('npm pkg set scripts.build="env-cmd -e envs react-scripts build"');
 
 // copy files:
 files.forEach((file) => {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
   const src = path.join(tpls, file);
-  const dest = path.join(process.cwd(), file);
-  fs.copyFileSync(src, dest);
+  const dist = path.join(process.cwd(), file);
+  fs.copyFileSync(src, dist);
 });
 
-console.log('\n@reference: https://js.work/posts/61077d5843ff0');
+console.log('\n@reference: https://js.work/works/61077d5843ff0');
 
 process.exit(0);
