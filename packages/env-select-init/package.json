@@ -1,6 +1,6 @@
 {
   "name": "@jswork/env-select-init",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Npx init for env-select.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
