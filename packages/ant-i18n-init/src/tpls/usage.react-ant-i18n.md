@@ -33,8 +33,8 @@ function App() {
   console.log(i18n.language);
 
   return (
-    <div className="App p-2">
-      <h1 className="text-3xl bg-slate-100 font-bold underline">
+    <div className="App">
+      <h1>
         Hello world! - {t('common.btn')}
       </h1>
     </div>
