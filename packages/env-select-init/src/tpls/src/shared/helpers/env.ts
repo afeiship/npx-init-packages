@@ -6,6 +6,6 @@ export default class Env extends AbstractEnvSelect {
    * @returns {string} The target env string.
    */
   static select(): string {
-    return window.location.hostname.includes('production') ? 'production' : 'beta';
+    return window.location.hostname.includes('/production/') ? 'production' : 'beta';
   }
 }
