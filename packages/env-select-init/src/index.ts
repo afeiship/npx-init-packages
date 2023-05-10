@@ -9,6 +9,8 @@ const files = fs.readdirSync(tpls);
 
 execSync('yarn add --dev env-cmd');
 execSync('yarn add @jswork/env-select');
+execSync('npm pkg set scripts.start "env-cmd -e envs react-scripts start"');
+execSync('npm pkg set scripts.build "env-cmd -e envs react-scripts build"');
 
 // copy files:
 files.forEach((file) => {
