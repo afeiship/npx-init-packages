@@ -1,28 +1,15 @@
 import httpSchema from '@jswork/http-schema';
+import interceptorRequest from './interceptors/request';
+import interceptorResponse from './interceptors/response';
+import schema from './schema';
 
-import ResponseCommon from './interceptors/response/common';
-import RequestCommon from './interceptors/request/common';
-
-const options = {
+const opts = {
+  adapter: 'Axios',
   slim: true,
-  interceptors: [
-    { type: 'response', fn: ResponseCommon },
-    { type: 'request', fn: RequestCommon },
-  ],
+  interceptors: [...interceptorRequest, ...interceptorResponse],
+  transformResponse(inResponse) {
+    return inResponse.data;
+  },
 };
 
-export default httpSchema(
-  {
-    baseURL: 'https://api.github.com',
-    request: ['', 'json'],
-    resources: [{ name: 'users' }],
-    items: [
-      {
-        items: {
-          profile: ['get', '/users/afeiship'],
-        },
-      },
-    ],
-  },
-  options
-);
+nx.$api = httpSchema(schema, opts);
