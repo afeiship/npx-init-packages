@@ -6,16 +6,9 @@
 [![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
-## installation
-```shell
-npm install @jswork/suwx-init
-```
-
 ## usage
-```js
-import suwxInit from '@jswork/suwx-init';
-
-// usage goes here.
+```shell
+$ npx @jswork/suwx-init --registry=https://registry.npmjs.org
 ```
 
 ## license
