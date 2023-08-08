@@ -10,7 +10,7 @@ const files = fg.sync('**/*', { cwd: tpls, dot: true });
 
 // add deps
 execSync('yarn add --dev @jswork/sync-uni-wxcomponents');
-execSync('pkg set scripts.sync-wxcomponents "suwx"');
+execSync('npm pkg set scripts.sync-wxcomponents=suwx');
 
 // copy files:
 files.forEach((file) => {
