@@ -1,0 +1,13 @@
+{
+  "app": {
+    "page": "src/pages.json",
+    "wxcomponents": "src/wxcomponents"
+  },
+  "packages": [
+    {
+      "name": "mind-ui-weapp",
+      "dist": "miniprogram_dist",
+      "scope": "mindui"
+    }
+  ]
+}
