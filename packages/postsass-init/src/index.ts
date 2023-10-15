@@ -19,5 +19,7 @@ files.forEach((file) => {
 });
 
 console.log('\n@reference: https://js.work/works/b19988493ab54');
+console.log('\n@usage: postsass -s src/style.scss -d dist/style.css');
+
 
 process.exit(0);
