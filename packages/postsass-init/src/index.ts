@@ -8,7 +8,7 @@ import fg from 'fast-glob';
 const tpls = path.join(__dirname, 'tpls');
 const files = fg.sync('**/*', { cwd: tpls, dot: true });
 
-execSync('yarn add --dev cssnano autoprefixer');
+execSync('yarn add --dev autoprefixer');
 
 // copy files:
 files.forEach((file) => {
