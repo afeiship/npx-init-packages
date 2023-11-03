@@ -9,9 +9,10 @@ export default defineConfig({
   // external: ['react'],
   dts: true,
   sourcemap: true,
+  external: ['fast-glob'],
   outExtension({ format }) {
     return {
       js: `.${format}.js`,
     };
-  }
+  },
 });
