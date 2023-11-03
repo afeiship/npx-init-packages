@@ -25,5 +25,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "homepage": "https://js.work",
-  "dependencies": {}
+  "dependencies": {
+    "fast-glob": "^3.2.12"
+  }
 }
