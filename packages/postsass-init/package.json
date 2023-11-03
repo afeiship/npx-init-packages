@@ -26,6 +26,6 @@
   },
   "homepage": "https://js.work",
   "dependencies": {
-    "ts-jest": "^29.0.0-next.1"
+    "fast-glob": "^3.2.12"
   }
 }
