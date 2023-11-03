@@ -8,7 +8,8 @@ import fg from 'fast-glob';
 const tpls = path.join(__dirname, 'tpls');
 const files = fg.sync('**/*', { cwd: tpls, dot: true });
 
-execSync('yarn add --dev autoprefixer');
+console.log('yarn add workbox-cli --dev');
+execSync(`npm pkg set scripts.pwa:generate='workbox generateSW workbox-config.cjs'`);
 
 // copy files:
 files.forEach((file) => {
@@ -18,8 +19,6 @@ files.forEach((file) => {
   fs.copyFileSync(src, dist);
 });
 
-console.log('\n@reference: https://js.work/works/b19988493ab54');
-console.log('\n@usage: postsass -s src/style.scss -d dist/style.css');
-
+console.log('\n@reference: https://js.work/posts/1bc64ea5a5dd0');
 
 process.exit(0);
