@@ -8,7 +8,7 @@ import fg from 'fast-glob';
 const tpls = path.join(__dirname, 'tpls');
 const files = fg.sync('**/*', { cwd: tpls, dot: true });
 
-execSync('yarn add @jswork/http-schema axios');
+console.log('yarn add @jswork/http-schema @jswork/next-axios axios');
 
 // copy files:
 files.forEach((file) => {
