@@ -1,5 +1,4 @@
 node_modules
-bower_components
 coverage
 npm-debug.log
 yarn.lock
@@ -8,6 +7,5 @@ package-lock.json
 .idea
 .vscode
 dist
-
 .tmp
-docs
+.superpowers

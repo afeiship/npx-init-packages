@@ -1,0 +1,15 @@
+files:
+  - 'package.json'
+  - 'README.md'
+  - '!node_modules'
+  - '!pnpm-lock.yaml'
+  - '!docs/**'
+
+replacements:
+  # 项目标识
+  - from: 'npx-init-description'
+    to: Something
+  - from: '@jswork/npx-init'
+    to: '@jswork/${PROJECT_NAME}'
+  - from: 'npx-init'
+    to: '${PROJECT_NAME}'
