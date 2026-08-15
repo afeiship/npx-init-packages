@@ -1,12 +1,11 @@
 {
-  "name": "@jswork/npx-init",
+  "name": "@jswork/http-schema-init",
   "version": "0.1.0",
-  "description": "npx-init-description",
+  "description": "Init for http-schema.",
   "main": "src/index.js",
   "bin": "src/index.js",
   "files": [
-    "src",
-    "rif.config.yaml"
+    "src"
   ],
   "scripts": {
     "release": "release-it"

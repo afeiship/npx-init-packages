@@ -1,5 +1,5 @@
-# npx-init
-> npx-init-description
+# http-schema-init
+> Init for http-schema.
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
@@ -37,7 +37,7 @@ into the current directory, preserving subdirectory structure and dotfiles.
 ## license
 Code released under [the MIT license](LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@jswork/npx-init
+[version-image]: https://img.shields.io/npm/v/@jswork/http-schema-init
 [version-url]: https://npmjs.org/package/@jswork/npx-init
 
 [license-image]: https://img.shields.io/npm/l/@jswork/npx-init
