@@ -1,6 +1,6 @@
 {
   "name": "@jswork/http-schema-init",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Init for http-schema.",
   "main": "src/index.js",
   "bin": "src/index.js",
@@ -18,7 +18,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@jswork/detect-pm-install-log": "^1.0.1",
+    "@jswork/detect-pm-install-log": "^1.0.2",
     "fast-glob": "^3.3.3"
   },
   "devDependencies": {
